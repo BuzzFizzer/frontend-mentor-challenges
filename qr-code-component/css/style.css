@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+
+  /* Fonts */
+  --paragraph-font-regular: 1.6rem;
+  --paragraph-font-large: 2.4rem;
+  --paragraph-regular: 400;
+  --paragraph-bold: 700;
+}
+
+/* Global Reset and general styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: var(--paragraph-font-regular);
+  box-sizing: border-box;
+  background-color: var(--color-light-gray);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container Styling*/
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Qr component styling */
+
+.qr-comp {
+  background-color: var(--color-white);
+  max-width: 32rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 10rem #00000033;
+}
+
+.qr-comp__text {
+  font-size: var(--paragraph-font);
+  padding: 0 0.75rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.qr-comp__qr-code {
+  padding-bottom: 2rem;
+}
+
+.qr-comp__qr-code img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+/* Reusable styles */
+
+.text-regular {
+  font-weight: var(--paragraph-regular);
+  color: var(--color-grayish-blue);
+}
+
+.text-bold {
+  font-weight: var(--paragraph-bold);
+  color: var(--color-dark-blue);
+  font-size: var(--paragraph-font-large);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Pre included styles + some slight edits */
+/* Footer Styling */
+
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: rgb(216, 36, 171);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: rgb(235, 52, 189);
+  text-decoration: underline currentColor;
+}

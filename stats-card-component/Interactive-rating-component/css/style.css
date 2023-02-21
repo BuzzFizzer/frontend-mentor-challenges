@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-grey: hsl(217, 12%, 63%);
+  --color-medium-grey: hsl(216, 12%, 54%);
+  --color-dark-blue: hsl(213, 19%, 18%);
+  --color-very-dark-blue: hsl(216, 12%, 8%);
+  --color-orange: hsl(25, 97%, 53%);
+  /* Fonts */
+  --paragraph-font-regular: 1.5rem;
+  --paragraph-font-large: 2.6rem;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+/* Global Reset and general styling */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: var(--paragraph-font-regular);
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-white);
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container Styling */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Ratinng Styling */
+.rating {
+  background-color: var(--color-dark-blue);
+  border-radius: 3rem;
+  max-width: 40rem;
+  padding: 3rem;
+}
+
+.rating__star {
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.rating__header {
+  font-size: var(--paragraph-font-large);
+  font-weight: var(--font-weight-bold);
+  padding-bottom: 1rem;
+}
+
+.rating__paragraph {
+  font-weight: var(--font-weight-regular);
+  color: var(--color-light-grey);
+  padding-bottom: 3rem;
+  line-height: 1.7;
+}
+
+.completed {
+  background-color: var(--color-dark-blue);
+  border-radius: 3rem;
+  max-width: 40rem;
+  padding: 3rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.completed__svg {
+  width: 18rem;
+  padding: 2rem 0;
+}
+
+.completed__rating {
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--color-orange);
+  border-radius: 2rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+  letter-spacing: 0.1rem;
+}
+
+.completed__message h3 {
+  font-size: var(--paragraph-font-large);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.completed__message p {
+  font-weight: var(--font-weight-regular);
+  color: var(--color-light-grey);
+  font-size: var(--paragraph-font-regular);
+  padding: 0 0.25rem;
+  padding-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.form__field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.form__field__option {
+  margin-bottom: 1.7rem;
+}
+
+.form__field__option>input {
+  display: none;
+}
+
+.form__field__option>label {
+  display: flex;
+  min-width: 5rem;
+  min-height: 5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: var(--font-weight-bold);
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light-grey);
+  cursor: pointer;
+}
+
+.form__field__option>label:hover {
+  background-color: var(--color-light-grey);
+  color: var(--color-white);
+}
+
+.form__submit-btn {
+  display: block;
+  padding: 1.6rem 0;
+  width: 100%;
+  border-radius: 3rem;
+  letter-spacing: 0.15rem;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+}
+
+.form__submit-btn:hover {
+  cursor: pointer;
+  color: var(--color-orange);
+  background-color: var(--color-white);
+}
+
+/* Js manipulated classes */
+.highlight {
+  background-color: var(--color-orange) !important;
+  color: var(--color-white) !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: flex !important;
+}
+
+/* Pre included styles + some slight edits */
+/* Footer Styling */
+.attribution {
+  font-size: var(--paragraph-font-regular);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: var(--color-orange);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #fc9145;
+  text-decoration: underline currentColor;
+}

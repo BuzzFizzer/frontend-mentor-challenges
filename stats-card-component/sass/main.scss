@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root {
+  // Colors 
+  --color-very-dark-blue: rgb(9, 11, 26);
+  --color-dark-desaturated-blue: rgb(27, 25, 56);
+  --color-soft-violet: rgb(170, 92, 219);
+  --color-white: rgb(255, 255, 255);
+  --color-slightly-transparent-white-paragrah: rgba(255, 255, 255, 0.75);
+  --color-slightly-transparent-white-heading: rgba(255, 255, 255, 0.6);
+  --color-image-overlay: rgba(104, 28, 151, 0.562);
+  // Fonts 
+  --paragraph-font-regular: 1.5rem;
+  --paragraph-font-medium: 2.2rem;
+  --paragraph-font-large: 3.6rem;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+// Global Reset and general styling 
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--paragraph-font-regular);
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-white);
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Container Styling
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+// Component Styling 
+
+.stats-preview {
+  max-width: 111rem;
+  max-height: 45rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--color-dark-desaturated-blue);
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+
+  &__picture {
+    position: relative;
+    width: 49%;
+
+    & img {
+      height: 100%;
+    }
+  }
+
+  &__text {
+    padding: 7rem 12rem 0 7rem;
+
+    &__header {
+      font-size: var(--paragraph-font-large);
+      font-weight: (--font-weight-bold);
+      margin-bottom: 3rem;
+
+      & span {
+        color: var(--color-soft-violet);
+      }
+    }
+
+    &__paragraph {
+      color: var(--color-slightly-transparent-white-paragrah);
+      margin-bottom: 8rem;
+      line-height: 1.7;
+    }
+
+    &__stats {
+      text-transform: uppercase;
+      display: flex;
+      padding-right: 2rem;
+      justify-content: space-between;
+
+      & p {
+        font-size: var(--paragraph-font-medium);
+        font-weight: var(--font-weight-bold);
+      }
+
+      & span {
+        font-family: 'Lexend Deca', sans-serif;
+        color: var(--color-slightly-transparent-white-heading);
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.colored-overlay {
+  position: absolute;
+  background-color: var(--color-image-overlay);
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+// Pre included styles + some slight edits 
+// Footer Styling 
+
+.attribution {
+  font-size: var(--paragraph-font-regular);
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  & a:link,
+  & a:visited {
+    color: rgb(170, 92, 219);
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color: lighten(rgb(170, 92, 219), $amount: 10%);
+    text-decoration: underline currentColor;
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+
+  .stats-preview {
+    &__text {
+      padding: 6rem 10rem 0 6rem;
+
+      &__paragraph {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .attribution {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .stats-preview {
+    &__text {
+      padding: 5rem 8rem 0 5rem;
+
+      &__paragraph {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .attribution {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .stats-preview {
+    text-align: center;
+    flex-direction: column;
+    max-width: 47rem;
+    max-height: 111.5rem;
+
+    &__picture {
+      order: -1;
+      width: 100%;
+      height: 35rem;
+    }
+
+    &__text {
+      padding: 6.5rem 6rem 0 6rem;
+
+      &__paragraph {
+        margin-bottom: 5.75rem;
+        font-size: 2rem;
+      }
+
+      &__stats {
+        flex-direction: column;
+
+        & p {
+          font-size: 3.2rem;
+          line-height: 1.2;
+          padding-bottom: 3rem;
+        }
+
+        & p:last-child {
+          padding-bottom: 5.75rem;
+        }
+      }
+    }
+  }
+}
