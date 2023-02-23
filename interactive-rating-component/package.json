@@ -7,7 +7,7 @@
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "keywords": [],
-  "author": "Caramello",
+  "author": "Caramel",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^8.0.0"
