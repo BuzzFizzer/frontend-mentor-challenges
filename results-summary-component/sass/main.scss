@@ -54,11 +54,6 @@ body {
   flex-direction: column;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 // Container Styling
 
 .flex-container {
@@ -78,7 +73,7 @@ a {
   display: flex;
   overflow: hidden;
   user-select: none;
-  box-shadow: 0.1rem 0.1rem 5rem var(--color-light-lavender);
+  box-shadow: 0.1rem 0.1rem 10rem var(--color-light-lavender);
 
   &__score {
     background: linear-gradient(
@@ -301,6 +296,7 @@ a {
 
       & button {
         font-size: 2.2rem;
+        font-weight: var(--font-weight-bold);
         padding: 2.2rem 0;
         max-width: 100%;
         margin-bottom: 3.75rem;
