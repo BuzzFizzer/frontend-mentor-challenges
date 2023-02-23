@@ -161,18 +161,6 @@ a {
   color: var(--color-dark-gray-blue);
   font-weight: var(--font-weight-bold); }
 
-.attribution {
-  font-size: var(--paragraph-font-regular);
-  text-align: center;
-  margin-bottom: 1.5rem; }
-  .attribution a:link,
-  .attribution a:visited {
-    color: #aa5cdb;
-    text-decoration: none; }
-  .attribution a:hover {
-    color: #c086e4;
-    text-decoration: underline currentColor; }
-
 @media (max-width: 800px) {
   html {
     font-size: 50%; }
@@ -218,6 +206,4 @@ a {
         padding: 2.2rem 0;
         max-width: 100%;
         margin-bottom: 3.75rem;
-        border-radius: 4rem; }
-  .attribution {
-    margin-top: 2rem; } }
+        border-radius: 4rem; } }

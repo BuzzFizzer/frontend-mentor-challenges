@@ -237,26 +237,6 @@ a {
   font-weight: var(--font-weight-bold);
 }
 
-// Pre included styles + some slight edits
-// Footer Styling
-
-.attribution {
-  font-size: var(--paragraph-font-regular);
-  text-align: center;
-  margin-bottom: 1.5rem;
-
-  & a:link,
-  & a:visited {
-    color: rgb(170, 92, 219);
-    text-decoration: none;
-  }
-
-  & a:hover {
-    color: lighten(rgb(170, 92, 219), $amount: 10%);
-    text-decoration: underline currentColor;
-  }
-}
-
 // Media Queries
 
 @media (max-width: 800px) {
@@ -327,9 +307,5 @@ a {
         border-radius: 4rem;
       }
     }
-  }
-
-  .attribution {
-    margin-top: 2rem;
   }
 }
