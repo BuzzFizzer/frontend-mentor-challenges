@@ -1,0 +1,15 @@
+{
+  "name": "stats-card-component",
+  "version": "1.0.0",
+  "description": "![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [],
+  "author": "Caramel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

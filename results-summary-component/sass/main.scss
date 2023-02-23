@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  // Colors
+  --color-light-red: 255, 87, 87;
+  --color-orangey-yellow: 255, 176, 31;
+  --color-green-teal: 0, 189, 145;
+  --color-cobalt-blue: 17, 37, 212;
+
+  // Gradients
+  --color-light-slate-blue: hsl(252, 100%, 67%);
+  --color-light-royal-blue: hsl(241, 81%, 54%);
+  --color-violet-blue: hsla(256, 72%, 46%, 1);
+  --color-persian-blue: hsla(241, 72%, 46%, 0);
+
+  // Neutral
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-pale-blue: hsl(221, 100%, 96%);
+  --color-light-lavender: hsl(241, 100%, 89%);
+  --color-dark-gray-blue: hsl(224, 30%, 27%);
+
+  // Fonts
+  --paragraph-font-regular: 1.8rem;
+
+  --font-weight-regular: 500;
+  --font-weight-bold: 800;
+}
+
+// Global Reset and general styling
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: var(--paragraph-font-regular);
+  background-color: var(--color-white);
+  color: var(--color-dark-gray-blue);
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Container Styling
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+// Component Styling
+
+.results {
+  max-width: 74rem;
+  height: 51rem;
+  width: 100%;
+  border-radius: 3rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  box-shadow: 0.1rem 0.1rem 5rem var(--color-light-lavender);
+
+  &__score {
+    background: linear-gradient(
+      to top,
+      var(--color-light-royal-blue),
+      var(--color-light-slate-blue)
+    );
+    width: 37rem;
+    height: 100%;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 6rem;
+    padding-top: 4.5rem;
+    text-align: center;
+
+    & .title {
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: var(--font-weight-regular);
+      padding-bottom: 3.5rem;
+      font-size: 2.4rem;
+    }
+
+    & .score-display {
+      color: rgba(255, 255, 255, 0.7);
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      background: linear-gradient(
+        to bottom,
+        var(--color-violet-blue),
+        var(--color-persian-blue)
+      );
+      margin-bottom: 3.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & span {
+        color: var(--color-white);
+        display: block;
+        font-size: 6.8rem;
+        font-weight: var(--font-weight-bold);
+      }
+    }
+
+    & .para-header {
+      padding-bottom: 1rem;
+      color: var(--color-white);
+      font-size: 3.2rem;
+    }
+
+    & .paragraph {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  &__summary {
+    flex: 1;
+    height: 100%;
+    padding-left: 4rem;
+    padding-top: 4.5rem;
+
+    & .title {
+      padding-bottom: 3rem;
+      font-size: 2.4rem;
+    }
+
+    & .detailed-report {
+      max-width: 29rem;
+      margin-bottom: 4rem;
+
+      & .item::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 0.9rem;
+        background-color: rgba(var(--color-light-red), 0.5);
+      }
+
+      & .item {
+        position: relative;
+        height: 5.5rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+
+        &.reaction {
+          background-color: rgba(var(--color-light-red), 0.075);
+          color: rgba(var(--color-light-red), 1);
+        }
+
+        &.memory {
+          background-color: rgba(var(--color-orangey-yellow), 0.075);
+          color: rgba(var(--color-orangey-yellow), 1);
+        }
+
+        &.verbal {
+          background-color: rgba(var(--color-green-teal), 0.075);
+          color: rgba(var(--color-green-teal), 1);
+        }
+
+        &.visual {
+          background-color: rgba(var(--color-cobalt-blue), 0.075);
+          color: rgba(var(--color-cobalt-blue), 1);
+        }
+
+        & span {
+          display: flex;
+          align-items: center;
+
+          & svg {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+
+      & .item:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    & button {
+      font-size: 1.8rem;
+      background-color: var(--color-dark-gray-blue);
+      color: var(--color-white);
+      max-width: 29rem;
+      padding: 1.5rem 0;
+      border-radius: 3rem;
+      width: 100%;
+      letter-spacing: 0.05rem;
+    }
+
+    & button:hover {
+      background: linear-gradient(
+        to top,
+        var(--color-light-royal-blue),
+        var(--color-light-slate-blue)
+      );
+      cursor: pointer;
+    }
+  }
+}
+
+.lighter {
+  color: rgba(128, 128, 128, 0.5);
+}
+
+.bold {
+  color: var(--color-dark-gray-blue);
+  font-weight: var(--font-weight-bold);
+}
+
+// Pre included styles + some slight edits
+// Footer Styling
+
+.attribution {
+  font-size: var(--paragraph-font-regular);
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  & a:link,
+  & a:visited {
+    color: rgb(170, 92, 219);
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color: lighten(rgb(170, 92, 219), $amount: 10%);
+    text-decoration: underline currentColor;
+  }
+}
+
+// Media Queries
+
+@media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+
+  .attribution {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 2rem;
+  }
+
+  .results {
+    border-radius: 0;
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    align-self: flex-start;
+
+    &__score {
+      width: 100%;
+      padding-top: 3rem;
+      border-bottom-right-radius: 4rem;
+      border-bottom-left-radius: 4rem;
+
+      .score-display {
+        width: 17.5rem;
+        height: 17.5rem;
+        margin-bottom: 3rem;
+      }
+
+      & .paragraph {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__summary {
+      width: 100%;
+      padding: 3.5rem 3.75rem;
+      padding-bottom: 0;
+
+      & .title {
+        padding-bottom: 2.5rem;
+      }
+
+      & .detailed-report {
+        max-width: 100%;
+        margin-bottom: 3.125rem;
+        font-weight: var(--font-weight-bold);
+        font-size: 2rem;
+
+        & .item {
+          height: 7.5rem;
+        }
+      }
+
+      & button {
+        font-size: 2.2rem;
+        padding: 2.2rem 0;
+        max-width: 100%;
+        margin-bottom: 3.75rem;
+        border-radius: 4rem;
+      }
+    }
+  }
+
+  .attribution {
+    margin-top: 2rem;
+  }
+}
