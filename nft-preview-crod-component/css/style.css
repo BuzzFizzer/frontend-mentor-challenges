@@ -3,6 +3,8 @@
   --color-primary-soft-blue: hsl(217, 54%, 11%);
   --color-primary-cyan: hsl(216, 50%, 16%);
   --color-main: hsl(178, 100%, 50%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-main-faded: hsl(215, 29%, 62%);
   --color-dark-blue-bg: hsl(217, 54%, 11%);
   --color-dark-blue-card: hsl(216, 50%, 16%);
   --color-dark-blue-line: hsl(215, 32%, 27%);
@@ -11,9 +13,7 @@
   --font-small-size: 1.6rem;
   --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-bold: 600;
-  --color-white: rgba(255, 255, 255, 1);
-  --color-main-faded: rgba(255, 255, 255, 0.5); }
+  --font-weight-bold: 600; }
 
 *,
 *::before,
