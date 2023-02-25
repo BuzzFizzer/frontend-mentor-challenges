@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 :root {
   --color-primary-soft-blue: hsl(217, 54%, 11%);
   --color-primary-cyan: hsl(216, 50%, 16%);
@@ -13,7 +14,8 @@
   --font-small-size: 1.6rem;
   --font-weight-light: 300;
   --font-weight-regular: 400;
-  --font-weight-bold: 600; }
+  --font-weight-bold: 600;
+}
 
 *,
 *::before,
@@ -22,10 +24,12 @@
   font-family: inherit;
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   background-color: var(--color-dark-blue-bg);
@@ -35,7 +39,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-size: var(--font-regular-size); }
+  font-size: var(--font-regular-size);
+}
 
 .card {
   background-color: var(--color-dark-blue-card);
@@ -44,89 +49,130 @@ body {
   padding: 2.5rem;
   border-radius: 1.5rem;
   color: var(--color-white);
-  user-select: none; }
-  .card__img {
-    background-image: url("../images/image-equilibrium.jpg");
-    background-position: center center;
-    background-size: contain;
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: 1rem;
-    margin-bottom: 2.5rem;
-    -webkit-user-drag: none;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer; }
-  .card__img-hover {
-    background-color: rgba(0, 255, 247, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center; }
-  .card__img:hover .card__img-hover {
-    display: flex; }
-  .card__title {
-    display: inline-block;
-    font-size: var(--font-header-size);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 1.5rem;
-    cursor: pointer; }
-  .card__title:hover {
-    color: var(--color-main); }
-  .card__para {
-    line-height: 1.5;
-    color: var(--color-main-faded);
-    font-weight: var(--font-weight-light);
-    margin-bottom: 2.5rem; }
-  .card__details {
-    display: flex;
-    justify-content: space-between;
-    font-size: var(--font-small-size);
-    font-weight: var(--font-weight-bold); }
-    .card__details span {
-      display: flex;
-      align-items: center; }
-    .card__details span:not(:last-child) {
-      color: var(--color-main); }
-    .card__details span:last-child {
-      font-weight: var(--font-weight-regular);
-      color: var(--color-main-faded); }
-  .card__divider {
-    width: 100%;
-    height: 0.1rem;
-    background-color: var(--color-dark-blue-line);
-    margin-top: 2.5rem;
-    margin-bottom: 1.5rem; }
-  .card__item-creator {
-    display: flex;
-    align-items: center; }
-    .card__item-creator img {
-      border: 1px solid var(--color-white);
-      border-radius: 50%;
-      width: 3.25rem;
-      margin-right: 1.7rem;
-      -webkit-user-drag: none; }
-    .card__item-creator p {
-      color: var(--color-main-faded);
-      font-size: var(--font-small-size); }
-      .card__item-creator p span {
-        color: var(--color-white);
-        cursor: pointer; }
-      .card__item-creator p span:hover {
-        color: var(--color-main); }
+  user-select: none;
+}
+
+.card__img {
+  background-image: url("../images/image-equilibrium.jpg");
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  margin-bottom: 2.5rem;
+  -webkit-user-drag: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card__img-hover {
+  background-color: rgba(0, 255, 247, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__img:hover .card__img-hover {
+  display: flex;
+}
+
+.card__title {
+  display: inline-block;
+  font-size: var(--font-header-size);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: var(--color-main);
+}
+
+.card__para {
+  line-height: 1.5;
+  color: var(--color-main-faded);
+  font-weight: var(--font-weight-light);
+  margin-bottom: 2.5rem;
+}
+
+.card__details {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-small-size);
+  font-weight: var(--font-weight-bold);
+}
+
+.card__details span {
+  display: flex;
+  align-items: center;
+}
+
+.card__details span:not(:last-child) {
+  color: var(--color-main);
+}
+
+.card__details span:last-child {
+  font-weight: var(--font-weight-regular);
+  color: var(--color-main-faded);
+}
+
+.card__divider {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--color-dark-blue-line);
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__item-creator {
+  display: flex;
+  align-items: center;
+}
+
+.card__item-creator img {
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  width: 3.25rem;
+  margin-right: 1.7rem;
+  -webkit-user-drag: none;
+}
+
+.card__item-creator p {
+  color: var(--color-main-faded);
+  font-size: var(--font-small-size);
+}
+
+.card__item-creator p span {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.card__item-creator p span:hover {
+  color: var(--color-main);
+}
 
 @media (max-width: 375px) {
   .card {
     max-width: 33rem;
-    height: 54.5rem; }
-    .card__title {
-      margin-bottom: 1rem; }
-    .card__para {
-      margin-bottom: 2rem;
-      font-size: var(--font-small-size); }
-    .card__divider {
-      margin-top: 1.5rem; } }
+    height: 54.5rem;
+  }
+
+  .card__title {
+    margin-bottom: 1rem;
+  }
+
+  .card__para {
+    margin-bottom: 2rem;
+    font-size: var(--font-small-size);
+  }
+
+  .card__divider {
+    margin-top: 1.5rem;
+  }
+}
