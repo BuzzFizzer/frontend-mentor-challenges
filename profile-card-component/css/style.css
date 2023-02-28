@@ -73,6 +73,7 @@ body::before {
   text-align: center;
   font-size: var(--font-size-regular);
   color: var(--color-very-dark-desaturated-blue);
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.25);
 }
 .card__top {
   height: 37.33%;
