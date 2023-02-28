@@ -1,0 +1,14 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:scripts": "npm-run-all --parallel compile:sass compile:ts",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:ts": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "Caramel",
+  "license": "ISC"
+}
