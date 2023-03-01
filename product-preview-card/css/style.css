@@ -114,6 +114,9 @@ body {
   user-select: none;
   cursor: pointer;
   padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .product-preview__details__btn:hover {
   background-color: #2c5d4b;

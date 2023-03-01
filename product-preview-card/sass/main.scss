@@ -135,6 +135,9 @@ body {
       user-select: none;
       cursor: pointer;
       padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         background-color: darken($color: #3c8067, $amount: 10%);
