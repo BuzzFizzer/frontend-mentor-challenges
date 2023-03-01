@@ -1,0 +1,16 @@
+*.sketch
+*.fig
+*.xd
+.DS_Store
+.prettierignore
+node_modules
+style-guide.md
+README.md
+design
+package-lock.json
+README-template.md
+data.json
+assets/fonts
+js
+tsconfig.json
+src

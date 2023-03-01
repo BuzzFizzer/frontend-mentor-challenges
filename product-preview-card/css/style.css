@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+:root {
+  --color-dark-green: hsl(158, 36%, 37%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-very-dark-blue: hsl(212, 21%, 14%);
+  --color-dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  --font-size-small: 1.2rem;
+  --font-size-regular: 1.4rem;
+  --font-size-large: 3.2rem;
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color-cream);
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--font-size-regular);
+  font-weight: var(font-weight-regular);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.product-preview {
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  height: 45rem;
+  max-width: 60rem;
+}
+.product-preview__img {
+  flex: 50%;
+  background-image: url("../images/image-product-desktop.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.product-preview__img::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.075);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.product-preview__details {
+  padding: 3rem;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-preview__details__class {
+  color: var(--color-dark-grayish-blue);
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.product-preview__details__name {
+  font-size: var(--font-size-large);
+  color: var(--color-very-dark-blue);
+  font-family: "Fraunces", serif;
+  line-height: 1;
+}
+.product-preview__details__desc {
+  color: var(--color-dark-grayish-blue);
+  line-height: 1.6;
+}
+.product-preview__details__price {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+.product-preview__details__price .discounted {
+  font-family: "Fraunces", serif;
+  color: var(--color-dark-green);
+  font-size: var(--font-size-large);
+}
+.product-preview__details__price .normal {
+  color: var(--color-dark-grayish-blue);
+  text-decoration: line-through;
+}
+.product-preview__details__btn {
+  font-weight: var(--font-weight-bold);
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+  border-radius: 1rem;
+  user-select: none;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+.product-preview__details__btn:hover {
+  background-color: #2c5d4b;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-regular: 1.6rem;
+  }
+  html {
+    font-size: 50%;
+  }
+  .product-preview__details {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --font-size-small: 1.5rem;
+    --font-size-regular: 1.75rem;
+    --font-size-large: 4rem;
+  }
+  .product-preview {
+    flex-direction: column;
+    max-width: 43.75rem;
+    height: 76.25rem;
+  }
+  .product-preview__img {
+    background-image: url("../images/image-product-mobile.jpg");
+    flex: 30rem;
+  }
+  .product-preview__details {
+    flex: 46.25rem;
+    justify-content: space-between;
+    padding: 3.5rem;
+  }
+}
