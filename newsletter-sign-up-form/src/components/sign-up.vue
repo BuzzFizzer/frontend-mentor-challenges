@@ -109,7 +109,7 @@
       flex-direction: column;
       align-items: flex-start;
       row-gap: 1.2rem;
-      margin-bottom: 3.5rem;
+      margin-bottom: 4.3rem;
 
       & li {
         display: flex;

@@ -28,15 +28,16 @@
   <form @submit.prevent="submit" class="form">
     <div class="form-group">
       <div class="labelling">
-        <label for="email">Email address</label>
-        <span id="invalid-label" v-if="invalid">Valid email required</span>
+        <label for="text">Email address</label>
+        <span class="invalid-label" v-if="invalid">Valid email required</span>
       </div>
       <input
         type="text"
         v-model="email"
         @click="invalid = false"
         placeholder="email@company.com"
-        :id="invalid ? 'invalid-input' : ''"
+        :class="invalid ? 'invalid-input' : ''"
+        id="text"
       />
     </div>
 
@@ -48,10 +49,11 @@
   .form {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
     & .form-group {
       margin-bottom: 2.5rem;
       & .labelling {
-        margin-bottom: 1.2rem;
+        margin-bottom: 1rem;
         display: flex;
         justify-content: space-between;
         font-size: var(--paragraph-font-tiny);
@@ -64,10 +66,10 @@
 
       & input {
         font-size: var(--paragraph-font-regular);
-        border: 1px solid var(--color-grey);
+        border: 1px solid lighten($color: #9294a0, $amount: 25);
         color: var(--color-dark-slate-grey);
         border-radius: 1rem;
-        padding: 1.8rem;
+        padding: 1.8rem 2.25rem;
         width: 100%;
         cursor: pointer;
 
@@ -111,14 +113,14 @@
     }
   }
 
-  #invalid-input {
-    border-color: var(--color-tomato);
-    background-color: #ff625736;
-    color: var(--color-tomato);
+  .invalid-input {
+    border-color: var(--color-tomato) !important;
+    background-color: #ff625736 !important;
+    color: var(--color-tomato) !important;
   }
 
-  #invalid-label {
-    color: var(--color-tomato);
+  .invalid-label {
+    color: var(--color-tomato) !important;
   }
 
   @media (max-width: 960px) {
