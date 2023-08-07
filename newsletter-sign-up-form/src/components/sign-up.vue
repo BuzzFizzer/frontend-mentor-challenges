@@ -94,7 +94,7 @@
     }
 
     &__title {
-      font-size: 5.8rem;
+      font-size: 5.6rem;
       font-weight: var(--font-weight-bold);
       margin-bottom: 2rem;
     }
