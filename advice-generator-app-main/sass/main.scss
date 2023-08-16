@@ -64,7 +64,7 @@ main {
   text-align: center;
   position: relative;
   padding-top: 5rem;
-  margin-top: -2.1rem;
+  margin-top: -3.5rem;
 
   & .header {
     text-transform: uppercase;
@@ -83,7 +83,7 @@ main {
   }
 
   & .divider {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
 
     & .desktop-divider {
       display: inline-block;
@@ -129,6 +129,9 @@ main {
     }
 
     & .divider {
+      margin-bottom: 6rem;
+      padding-bottom: 2rem;
+
       & .desktop-divider {
         display: none;
       }
