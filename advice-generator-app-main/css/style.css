@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+  /* Colors Primary */
+  --color-light-cyan: hsl(193, 38%, 86%);
+  --color-neon-green: hsl(150, 100%, 66%);
+  --color-neon-green-hover: hsla(150, 100%, 66%, 0.4);
+  /* Colors Neutral */
+  --color-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-grayish-blue: hsl(217, 19%, 38%);
+  --color-dark-blue: hsl(218, 23%, 16%);
+  /* Fonts */
+  --font-size-header: 1.4rem;
+  --font-size-regular: 2.8rem;
+  --font-weight-regular: 800;
+  /* Shadows */
+  --shadow-common: 0 0 4px 8px rgb(23, 27, 34, 0.1); }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background: var(--color-dark-blue);
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box; }
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.advice-component {
+  box-shadow: var(--shadow-common);
+  background: var(--color-dark-grayish-blue);
+  height: fit-content;
+  border-radius: 1.5rem;
+  min-width: 34.5rem;
+  max-width: 54rem;
+  margin: 0 1.5rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 5rem; }
+  .advice-component .header {
+    text-transform: uppercase;
+    font-size: var(--font-size-header);
+    color: var(--color-neon-green);
+    margin-bottom: 2.25rem;
+    letter-spacing: 3.5px; }
+  .advice-component .advice-paragraph {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-regular);
+    color: var(--color-light-cyan);
+    padding: 0 4.6rem;
+    margin-bottom: 3.75rem; }
+  .advice-component .divider {
+    margin-bottom: 6.5rem; }
+    .advice-component .divider .desktop-divider {
+      display: inline-block; }
+    .advice-component .divider .mobile-divider {
+      display: none; }
+  .advice-component .advice-generator {
+    background: var(--color-neon-green);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 6.5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer; }
+    .advice-component .advice-generator:hover {
+      box-shadow: 0 0 2.5rem 1rem var(--color-neon-green-hover); }
+
+@media (max-width: 570px) {
+  :root {
+    --font-size-regular: 2.4rem;
+    --font-size-header: 1.1rem; }
+  .advice-component .advice-paragraph {
+    margin-bottom: 2.5rem;
+    padding: 0 1.25rem; }
+  .advice-component .divider {
+    margin-bottom: 6rem; }
+    .advice-component .divider .desktop-divider {
+      display: none; }
+    .advice-component .divider .mobile-divider {
+      display: inline-block; } }
