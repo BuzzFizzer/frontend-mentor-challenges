@@ -56,7 +56,7 @@ main {
   text-align: center;
   position: relative;
   padding-top: 5rem;
-  margin-top: -4rem;
+  margin-top: -2.1rem;
 }
 
 .advice-component .header {
@@ -76,7 +76,7 @@ main {
 }
 
 .advice-component .divider {
-  margin-bottom: 6.5rem;
+  margin-bottom: 6rem;
 }
 
 .advice-component .divider .desktop-divider {
@@ -118,10 +118,6 @@ main {
   .advice-component .advice-paragraph {
     margin-bottom: 3rem;
     padding: 0 1.25rem;
-  }
-
-  .advice-component .divider {
-    margin-bottom: 6rem;
   }
 
   .advice-component .divider .desktop-divider {
