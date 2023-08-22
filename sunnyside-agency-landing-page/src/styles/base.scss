@@ -1,0 +1,95 @@
+// ? --- Fonts
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+/*
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Fraunces', serif;
+*/
+
+// ? --- Variables
+:root {
+  /* Colors */
+  // --- Primary
+  --color-soft-red: hsl(7, 99%, 70%);
+  --color-yellow: hsl(51, 100%, 49%);
+  --color-desaturated-cyan: hsl(167, 40%, 24%);
+  --color-dark-blue: hsl(198, 62%, 26%);
+  --color-moderate-cyan: hsl(168, 34%, 41%);
+
+  // --- Neutral
+  --color-very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --color-very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --color-dark-grayish-blue: hsl(232, 10%, 55%);
+  --color-grayish-blue: hsl(210, 4%, 67%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-split-screen-section: hsl(30, 100%, 98%);
+  --color-testimonials-section: hsl(30, 100%, 98%);
+  --color-footer-background: hsl(167, 43%, 70%);
+
+  /* Fonts */
+  --font-barlow: "Barlow", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+
+  --header-hero-font: 5.6rem;
+  --header-hero-font-mobile: 5.4rem;
+  --header-font-small: 2rem;
+
+  --navigation-anchor-font: 2.4rem;
+  --navigation-anchor-font-samll: 2rem;
+  --navigation-anchor-font-samllest: 1.9rem;
+
+  --paragraph-font-largest: 2.2rem;
+  --paragraph-font-larger: 2rem;
+  --paragraph-font-large: 1.8rem;
+  --paragraph-font: 1.6rem;
+
+  --header-font-regular: 4rem;
+
+  --line-height-regular: 1.6;
+
+  --font-weight-boldest: 900;
+  --font-weight-bold: 700;
+  --font-weight-light: 600;
+}
+
+// ? --- Global Reset & Basic Styles
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-text);
+  line-height: var(--line-height-regular);
+  font-size: var(--paragraph-font-regular);
+  font-family: "Fraunces", serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
