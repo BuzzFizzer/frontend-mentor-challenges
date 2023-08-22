@@ -144,7 +144,7 @@
 
       & .contact {
         & a {
-          font-size: var(--navigation-anchor-font-small);
+          font-size: var(--paragraph-font-larger);
           text-transform: uppercase;
           font-family: var(--font-fraunces);
           color: var(--color-very-dark-desaturated-blue);
