@@ -1,0 +1,44 @@
+// ? -- Global Reset
+*,
+*::before,
+*::after {
+  transition: color 300ms, background-color 300ms;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}

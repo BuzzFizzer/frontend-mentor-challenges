@@ -1,0 +1,28 @@
+{
+  "name": "recipe-page",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "^0.11.4",
+    "@pinia/nuxt": "^0.11.2",
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.19.2",
+    "nuxt": "^4.2.0",
+    "pinia": "^3.0.3",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.93.2"
+  },
+  "overrides": {
+    "@vue/devtools-kit": ">=8.0.3"
+  }
+}

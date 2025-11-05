@@ -1,0 +1,17 @@
+body {
+  color: var(--text);
+  background-color: var(--stone-100);
+  font-size: 1.6rem;
+  font-family: var(--font-family-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+#application {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  min-width: 35rem;
+}

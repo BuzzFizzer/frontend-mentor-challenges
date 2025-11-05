@@ -1,0 +1,392 @@
+[{
+  "_id": {
+    "$oid": "6906320e9d25cef96263b749"
+  },
+  "title": "Spicy Shakshuka",
+  "description": "A North African and Middle Eastern classic of eggs poached in a rich, spiced tomato and pepper sauce.",
+  "image": {
+    "src": "/recipes/Spicy-Skakshuka.webp",
+    "alt": "Shakshuka served in a skillet with parsley on top"
+  },
+  "preparation": {
+    "total": "30 minutes",
+    "preparation": "10 minutes",
+    "cooking": "20 minutes"
+  },
+  "ingredients": [
+    "2 tablespoons olive oil",
+    "1 onion, chopped",
+    "1 red bell pepper, chopped",
+    "3 garlic cloves, minced",
+    "1 teaspoon paprika",
+    "1 teaspoon cumin",
+    "1 can (400g) crushed tomatoes",
+    "4 eggs",
+    "Salt and pepper to taste",
+    "Fresh parsley, chopped (for garnish)"
+  ],
+  "instructions": [
+    {
+      "step": "Sauté vegetables",
+      "follow": "Heat olive oil in a skillet over medium heat. Add onion and bell pepper and cook until softened, about 5 minutes."
+    },
+    {
+      "step": "Add seasoning",
+      "follow": "Stir in garlic, paprika, and cumin. Cook for 1–2 minutes until fragrant."
+    },
+    {
+      "step": "Add tomatoes",
+      "follow": "Pour in crushed tomatoes, season with salt and pepper, and simmer uncovered for 8–10 minutes until slightly thickened."
+    },
+    {
+      "step": "Create wells for eggs",
+      "follow": "Use a spoon to make small spaces in the sauce. Crack one egg into each spot."
+    },
+    {
+      "step": "Cook eggs",
+      "follow": "Cover with a lid and cook until whites set but yolks remain soft, around 5–7 minutes."
+    },
+    {
+      "step": "Serve",
+      "follow": "Remove from heat, garnish with parsley, and serve warm with bread."
+    }
+  ],
+  "nutrition": [
+    {
+      "name": "Calories",
+      "amount": "290kcal"
+    },
+    {
+      "name": "Carbs",
+      "amount": "18g"
+    },
+    {
+      "name": "Protein",
+      "amount": "14g"
+    },
+    {
+      "name": "Fat",
+      "amount": "18g"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6906320e9d25cef96263b74a"
+  },
+  "title": "Creamy Mushroom Soup",
+  "description": "A comforting, silky soup featuring sautéed mushrooms and aromatic herb. ",
+  "image": {
+    "src": "/recipes/creamy-mushroom-soup.webp",
+    "alt": "Creamy mushroom soup in a bowl with herbs on top"
+  },
+  "preparation": {
+    "total": "35 minutes",
+    "preparation": "10 minutes",
+    "cooking": "25 minutes"
+  },
+  "ingredients": [
+    "2 tablespoons butter",
+    "1 onion, chopped",
+    "400g mushrooms, sliced",
+    "2 cloves garlic, minced",
+    "2 cups vegetable broth",
+    "1/2 cup cream",
+    "Salt and pepper to taste"
+  ],
+  "instructions": [
+    {
+      "step": "Cook onions",
+      "follow": "Melt butter in a pot over medium heat. Add onions and cook until soft and translucent."
+    },
+    {
+      "step": "Add mushrooms",
+      "follow": "Add mushrooms and cook until they soften and release moisture."
+    },
+    {
+      "step": "Add garlic",
+      "follow": "Stir in garlic and cook for 1 minute."
+    },
+    {
+      "step": "Simmer",
+      "follow": "Pour in vegetable broth and simmer for 10 minutes."
+    },
+    {
+      "step": "Blend",
+      "follow": "Blend until smooth using a blender or immersion blender."
+    },
+    {
+      "step": "Finish",
+      "follow": "Stir in cream, season with salt and pepper, and gently heat without boiling."
+    },
+    {
+      "step": "Serve",
+      "follow": "Serve warm."
+    }
+  ],
+  "nutrition": [
+    {
+      "name": "Calories",
+      "amount": "250kcal"
+    },
+    {
+      "name": "Carbs",
+      "amount": "12g"
+    },
+    {
+      "name": "Protein",
+      "amount": "8g"
+    },
+    {
+      "name": "Fat",
+      "amount": "19g"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6906320e9d25cef96263b74b"
+  },
+  "title": "Avocado Toast with Chili Flakes",
+  "description": "A quick, nutritious toast topped with creamy mashed avocado and a kick of spicy chili.",
+  "image": {
+    "src": "/recipes/avocado-toast-chillie-flakes.webp",
+    "alt": "Toast topped with avocado and chili flakes"
+  },
+  "preparation": {
+    "total": "5 minutes",
+    "preparation": "5 minutes",
+    "cooking": "0 minutes"
+  },
+  "ingredients": [
+    "2 slices bread",
+    "1 ripe avocado",
+    "Salt and pepper to taste",
+    "Chili flakes, to taste",
+    "Lemon juice (optional)"
+  ],
+  "instructions": [
+    {
+      "step": "Toast bread",
+      "follow": "Toast bread until golden brown."
+    },
+    {
+      "step": "Prepare avocado",
+      "follow": "Scoop avocado into a bowl and mash with a fork."
+    },
+    {
+      "step": "Season",
+      "follow": "Add salt, pepper, and lemon juice if using."
+    },
+    {
+      "step": "Assemble",
+      "follow": "Spread avocado evenly on toast."
+    },
+    {
+      "step": "Finish",
+      "follow": "Sprinkle chili flakes and serve immediately."
+    }
+  ],
+  "nutrition": [
+    {
+      "name": "Calories",
+      "amount": "320kcal"
+    },
+    {
+      "name": "Carbs",
+      "amount": "28g"
+    },
+    {
+      "name": "Protein",
+      "amount": "6g"
+    },
+    {
+      "name": "Fat",
+      "amount": "20g"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6906320e9d25cef96263b74d"
+  },
+  "title": "Tomato Basil Bruschetta",
+  "description": "A light Italian appetizer of toasted bread topped with seasoned tomato and basil.",
+  "image": {
+    "src": "/recipes/tomato-and-basil-bruschetta.webp",
+    "alt": "Bruschetta topped with diced tomatoes and basil"
+  },
+  "preparation": {
+    "total": "15 minutes",
+    "preparation": "10 minutes",
+    "cooking": "5 minutes"
+  },
+  "ingredients": [
+    "1 baguette, sliced",
+    "2 tablespoons olive oil",
+    "3 tomatoes, diced",
+    "Fresh basil, chopped",
+    "1 garlic clove, minced",
+    "Salt and pepper to taste"
+  ],
+  "instructions": [
+    {
+      "step": "Toast bread",
+      "follow": "Brush bread with olive oil and toast until lightly crisp."
+    },
+    {
+      "step": "Combine topping",
+      "follow": "Mix tomatoes, basil, garlic, salt, and pepper in a bowl."
+    },
+    {
+      "step": "Serve",
+      "follow": "Spoon tomato mixture onto bread just before serving to avoid sogginess."
+    }
+  ],
+  "nutrition": [
+    {
+      "name": "Calories",
+      "amount": "180kcal"
+    },
+    {
+      "name": "Carbs",
+      "amount": "25g"
+    },
+    {
+      "name": "Protein",
+      "amount": "4g"
+    },
+    {
+      "name": "Fat",
+      "amount": "7g"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6906320e9d25cef96263b74e"
+  },
+  "title": "Chicken Caesar Salad",
+  "description": "A crisp romaine salad topped with grilled chicken, croutons, and Caesar dressing.",
+  "image": {
+    "src": "/recipes/chicken-caesar-salad.webp",
+    "alt": "Chicken Caesar salad with parmesan shavings"
+  },
+  "preparation": {
+    "total": "25 minutes",
+    "preparation": "10 minutes",
+    "cooking": "15 minutes"
+  },
+  "ingredients": [
+    "2 chicken breasts",
+    "Romaine lettuce",
+    "Croutons",
+    "Parmesan cheese",
+    "Caesar dressing",
+    "Salt and pepper"
+  ],
+  "instructions": [
+    {
+      "step": "Season chicken",
+      "follow": "Season chicken breasts with salt and pepper."
+    },
+    {
+      "step": "Cook chicken",
+      "follow": "Grill or pan-sear chicken until fully cooked, then let rest before slicing."
+    },
+    {
+      "step": "Prepare salad base",
+      "follow": "Chop romaine lettuce and place in a bowl."
+    },
+    {
+      "step": "Add dressing",
+      "follow": "Toss lettuce with Caesar dressing until lightly coated."
+    },
+    {
+      "step": "Assemble",
+      "follow": "Top salad with sliced chicken, croutons, and shaved parmesan."
+    }
+  ],
+  "nutrition": [
+    {
+      "name": "Calories",
+      "amount": "420kcal"
+    },
+    {
+      "name": "Carbs",
+      "amount": "12g"
+    },
+    {
+      "name": "Protein",
+      "amount": "38g"
+    },
+    {
+      "name": "Fat",
+      "amount": "25g"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6906320e9d25cef96263b74f"
+  },
+  "title": "Beef Stir Fry",
+  "description": "Tender beef strips stir-fried with vegetables in a savory soy-based sauce.",
+  "image": {
+    "src": "/recipes/beef-stirfry.webp",
+    "alt": "Beef stir fry with colorful vegetables"
+  },
+  "preparation": {
+    "total": "25 minutes",
+    "preparation": "10 minutes",
+    "cooking": "15 minutes"
+  },
+  "ingredients": [
+    "300g beef strips",
+    "2 cups mixed vegetables",
+    "2 tablespoons soy sauce",
+    "1 tablespoon sesame oil",
+    "1 garlic clove, minced",
+    "Salt and pepper"
+  ],
+  "instructions": [
+    {
+      "step": "Sear beef",
+      "follow": "Heat oil in a pan over high heat. Add beef and cook until browned."
+    },
+    {
+      "step": "Add garlic",
+      "follow": "Stir in garlic and cook 30 seconds."
+    },
+    {
+      "step": "Add vegetables",
+      "follow": "Add vegetables and stir fry until tender but crisp."
+    },
+    {
+      "step": "Season",
+      "follow": "Add soy sauce and sesame oil, stirring to coat."
+    },
+    {
+      "step": "Finish and serve",
+      "follow": "Season with salt and pepper, remove from heat, and serve warm."
+    }
+  ],
+  "nutrition": [
+    {
+      "name": "Calories",
+      "amount": "360kcal"
+    },
+    {
+      "name": "Carbs",
+      "amount": "12g"
+    },
+    {
+      "name": "Protein",
+      "amount": "32g"
+    },
+    {
+      "name": "Fat",
+      "amount": "20g"
+    }
+  ]
+}]

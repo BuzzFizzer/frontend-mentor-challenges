@@ -1,0 +1,10 @@
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Nuxt build output
+.output/
+.build/
+.nuxt/
+dist/
